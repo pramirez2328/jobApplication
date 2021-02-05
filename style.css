@@ -1,7 +1,31 @@
-.container {
+#header {
+  grid-area: header;
+}
+
+#datePicker {
+  grid-area: datePicker;
+}
+
+#sectionContent {
+  grid-area: sectionContent;
+}
+
+#output {
+  grid-area: output;
+}
+
+#footer {
+  grid-area: footer;
+}
+
+#container {
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 17% 7% auto auto 5%;
+  grid-template-columns: auto;
+  grid-template-rows: 1fr 0.5fr 2fr 1fr 0.5fr;
+  grid-template-areas: "header" "datePicker" "sectionContent " "output" "footer";
+  grid-row-gap: 0.5rem;
+  width: 100%;
+  height: 100%;
 }
 
 .headerItems {
