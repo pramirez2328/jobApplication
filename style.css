@@ -21,7 +21,7 @@
 #container {
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: 1fr 0.4fr 1.2fr 2.2fr 0.2fr;
+  grid-template-rows: 1fr 0.4fr 1.2fr 2fr 0.2fr;
   grid-template-areas: "header" "datePicker" "sectionContent " "output" "footer";
   grid-row-gap: 0.5rem;
   width: 100%;
@@ -95,7 +95,7 @@
 }
 
 label {
-  font-size: 1.3em;
+  font-size: 1.2em;
 }
 
 select:hover {
@@ -114,6 +114,7 @@ span {
 .outputInformation {
   border: 5px groove #fad4a7;
   margin: 1rem 2rem 0 2rem;
+  color: rgb(51, 46, 27);
   padding: 1em;
   -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 0px 0px 16px 18px rgba(76, 74, 73, 0.19);
   box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 0px 0px 16px 18px rgba(76, 74, 73, 0.19);
