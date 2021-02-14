@@ -21,7 +21,7 @@
 #container {
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: 1fr 0.4fr 1.2fr 2fr 0.2fr;
+  grid-template-rows: 1fr 0.4fr 1fr 2.2fr 0.2fr;
   grid-template-areas: "header" "datePicker" "sectionContent " "output" "footer";
   grid-row-gap: 0.5rem;
   width: 100%;
@@ -59,8 +59,10 @@
   display: flex;
   flex-direction: row;
   border-bottom: 4px solid orange;
+  justify-content: space-around;
   border-radius: 10%;
   width: 90%;
+  padding-bottom: 1rem;
   margin: auto;
 }
 
@@ -72,18 +74,8 @@
 }
 
 .dateLabel {
-  margin: 0 3rem 0.3rem 0;
   color: orange;
   text-shadow: 1px 1px black;
-}
-
-#start {
-  margin: 0 1rem 0.7rem 0;
-}
-
-.required {
-  margin: 0.5rem 0 0 1.5rem;
-  color: red;
 }
 
 #sectionContent {
@@ -113,6 +105,7 @@ span {
 
 .outputInformation {
   border: 5px groove #fad4a7;
+  height: 14rem;
   margin: 1rem 2rem 0 2rem;
   color: rgb(51, 46, 27);
   padding: 1em;
