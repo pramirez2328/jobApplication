@@ -119,6 +119,15 @@ span {
   box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 0px 0px 16px 18px rgba(76, 74, 73, 0.19);
 }
 
+.today {
+  text-align: center;
+  visibility: hidden;
+}
+
+.today2 {
+  color: crimson;
+}
+
 .button {
   margin-top: 1rem;
   margin-right: 2rem;
