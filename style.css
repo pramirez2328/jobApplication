@@ -109,9 +109,9 @@ span {
   border-bottom: orange solid 4px;
 }
 
-.outputInformation {
+#outputInformation {
   border: 5px groove #fad4a7;
-  height: 50%;
+  height: 55%;
   margin: 1rem 2rem 0 2rem;
   color: rgb(51, 46, 27);
   padding: 1em;
