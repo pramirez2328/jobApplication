@@ -87,13 +87,22 @@
 #sectionContent {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: center;
+  align-items: flex-end;
+  padding-right: 3rem;
   border-bottom: orange solid 4px;
+}
+
+.inputs {
+  margin-bottom: 1.5rem;
 }
 
 label {
   font-size: 1.2em;
+}
+
+select {
+  width: 10rem;
 }
 
 select:hover {
@@ -134,17 +143,29 @@ hr {
   color: crimson;
 }
 
-.jobName {
-  margin: 1rem 0 0.3rem 1.5rem;
+#jobName {
+  margin: 1rem 0 0.5rem 1.5rem;
+  visibility: hidden;
 }
 
-.leader {
-  margin: 1rem 0 0.3rem 1.5rem;
+#leader {
+  margin: 0 0 0.5rem 1.5rem;
+  visibility: hidden;
+}
+
+#crewBox {
+  display: flex;
+  flex-direction: row;
 }
 
 #crew {
-  display: flex;
-  flex-direction: row;
+  margin: 0 1.5rem 0 1.5rem;
+  visibility: hidden;
+}
+
+.laborer {
+  padding-bottom: 1.5px;
+  visibility: hidden;
 }
 
 .button {
