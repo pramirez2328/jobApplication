@@ -124,8 +124,27 @@ span {
   visibility: hidden;
 }
 
+hr {
+  height: 1.5px;
+  background-color: orange;
+  border: none
+}
+
 .today2 {
   color: crimson;
+}
+
+.jobName {
+  margin: 1rem 0 0.3rem 1.5rem;
+}
+
+.leader {
+  margin: 1rem 0 0.3rem 1.5rem;
+}
+
+#crew {
+  display: flex;
+  flex-direction: row;
 }
 
 .button {
