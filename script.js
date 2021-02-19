@@ -14,10 +14,8 @@ let inputCrewMembers = document.querySelector( '#crewMembers' );
 let crew = document.querySelector( '#crewBox' );
 let outputLaborer = document.querySelectorAll( '#laborers' );
 
-console.log( inputCrewMembers );
-console.log( crew );
-console.log( outputLaborer );
 
+let deleteCrewMember;
 
 function handleDate( e ) {
   todayTitle[ 0 ].style.visibility = 'visible';
@@ -40,11 +38,18 @@ function handleCrewMembers( e ) {
   crew.style.visibility = 'visible';
   let li = document.createElement( 'li' );
   li.className += 'laborer';
-  li.innerHTML = `${e.target.value}   <span class="fas fa-trash-alt garbage"></span>`;
+  li.innerHTML = `${e.target.value} <span class="fas fa-trash-alt garbage"></span>`;
   outputLaborer[ 0 ].appendChild( li );
+  deleteCrewMember = document.querySelector( "span.garbage" );
+  console.log( deleteCrewMember );
 }
 
 day.onchange = handleDate;
 inputJobName.onchange = handleJobName;
 inputCrewLeader.onchange = handleLeaderName;
 inputCrewMembers.onchange = handleCrewMembers;
+
+
+button.addEventListener( "click", ( event ) => {
+  button.textContent = `Click count: ${event.detail}`;
+} );
