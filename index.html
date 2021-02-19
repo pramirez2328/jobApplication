@@ -39,35 +39,35 @@
     <section id="sectionContent">
 
       <div class="inputs inputName">
-        <label for="inputJobName"><span>*</span> Job Name:</label>
+        <label for="inputJobName"><span class="red">*</span> Job Name:</label>
         <select id="inputJobName">
-          <option value="volvo"> ... Enter Name</option>
-          <option value="volvo">Main</option>
-          <option value="saab">Smith</option>
-          <option value="fiat">yard</option>
-          <option value="audi">pickUp material</option>
+          <option value="0"> ... Enter Name</option>
+          <option value="Main">Main</option>
+          <option value="Smith">Smith</option>
+          <option value="yard">yard</option>
+          <option value="Pickup Material">pickUp material</option>
 				</select>
       </div>
 
       <div class="inputs inputCrewLeader">
-        <label for="crewLeader"><span>*</span> Crew Leader:</label>
+        <label for="crewLeader"><span class="red">*</span> Crew Leader:</label>
         <select id="crewLeader">
-          <option value="volvo"> ... Enter Name</option>
-          <option value="volvo">Pedro</option>
-          <option value="saab">Samuel</option>
-          <option value="fiat">Ruben</option>
-          <option value="audi">Fatimo</option>
+          <option value="0"> ... Enter Name</option>
+          <option value="Pedro">Pedro</option>
+          <option value="Samuel">Samuel</option>
+          <option value="Ruben">Ruben</option>
+          <option value="Fatimo">Fatimo</option>
 				</select>
       </div>
 
       <div class="inputCrewMember">
         <label for="crewMembers"><span>*</span> Crew Members:</label>
         <select id="crewMembers">
-          <option value="volvo"> ... Enter Name</option>
-          <option value="volvo">Chaparro</option>
-          <option value="saab">Santi</option>
-          <option value="fiat">Lupe</option>
-          <option value="audi">David</option>
+          <option value="0"> ... Enter Name</option>
+          <option value="Chaparro">Chaparro</option>
+          <option value="Santi">Santi</option>
+          <option value="Lupe">Lupe</option>
+          <option value="David">David</option>
 				</select>
       </div>
 
@@ -76,20 +76,15 @@
 
     <section id="output">
       <div id="outputInformation">
-        <h1 class="today">Today is: <span class="today2"></span></h1>
+        <h1 class="today">Today is: <span id="today2"></span></h1>
         <hr class="today">
-        <p id="jobName">Job Name: </p>
-        <p id="leader">Crew Leader: </p>
+        <p id="jobName">Job Name: <span id="jobName2"> </span></p>
+        <p id="leader">Crew Leader: <span id="leader2"> </span></p>
 
         <div id="crewBox">
           <p id="crew">Crew Members: </p>
-          <ol>
-            <li class="laborer">hey dfskjhsllsj</li>
-            <li class="laborer">hey dfskjhsllsj</li>
-            <li class="laborer">hey dfskjhsllsj</li>
-            <li class="laborer">hey dfskjhsllsj</li>
-            <li class="laborer">hey dfskjhsllsj</li>
-            <li class="laborer">hey dfskjhsllsj</li>
+          <ol id="laborers">
+
           </ol>
         </div>
 

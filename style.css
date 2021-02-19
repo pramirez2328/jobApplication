@@ -12,6 +12,10 @@
 
 #output {
   grid-area: output;
+  border-bottom: orange solid 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 #footer {
@@ -21,7 +25,7 @@
 #container {
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: 1fr 0.4fr 1fr 2fr 0.2fr;
+  grid-template-rows: 1fr 0.4fr 1fr 2.2fr 0.2fr;
   grid-template-areas: "header" "datePicker" "sectionContent " "output" "footer";
   grid-row-gap: 0.5rem;
   width: 100%;
@@ -109,19 +113,14 @@ select:hover {
   background-color: rgb(253, 199, 99);
 }
 
-span {
+span.red {
   color: red;
-  font-size: medium;
-}
-
-#output {
-  border-bottom: orange solid 4px;
 }
 
 #outputInformation {
   border: 5px groove #fad4a7;
-  height: fit-content;
-  margin: 1rem 2rem 0 2rem;
+  margin: 1.5rem 2rem 1.5rem 2rem;
+  height: 100%;
   padding: 1rem;
   color: rgb(51, 46, 27);
   -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 0px 0px 16px 18px rgba(76, 74, 73, 0.19);
@@ -139,7 +138,7 @@ hr {
   border: none
 }
 
-.today2 {
+#today2 {
   color: crimson;
 }
 
@@ -148,9 +147,17 @@ hr {
   visibility: hidden;
 }
 
+#jobName2 {
+  color: crimson;
+}
+
 #leader {
   margin: 0 0 0.5rem 1.5rem;
   visibility: hidden;
+}
+
+#leader2 {
+  color: crimson;
 }
 
 #crewBox {
@@ -165,12 +172,11 @@ hr {
 
 .laborer {
   padding-bottom: 1.5px;
-  visibility: hidden;
 }
 
 .button {
-  margin: 1rem 2rem 1rem 0;
-  float: right;
+  align-self: flex-end;
+  margin: 0 2rem 1.5rem 0;
   height: 2rem;
   width: 5rem;
   -webkit-box-shadow: 0px 10px 13px -7px #000000, 0px 0px 9px 0px rgba(252, 45, 11, 0);
@@ -183,6 +189,7 @@ hr {
 }
 
 .myName {
+  color: crimson;
   font-size: small;
   font-family: fantasy;
 }
