@@ -165,22 +165,39 @@ hr {
   flex-direction: row;
 }
 
-#crew {
-  margin: 0 1.5rem 0 1.5rem;
+#crewBox {
   visibility: hidden;
 }
 
+#crew {
+  margin: 0 1.5rem 0 1.5rem;
+}
+
 .laborer {
-  padding-bottom: 1.5px;
+  margin-bottom: 1rem;
+}
+
+.garbage {
+  color: rgb(114, 113, 112);
+}
+
+ol li {
+  color: crimson;
 }
 
 .button {
   align-self: flex-end;
   margin: 0 2rem 1.5rem 0;
-  height: 2rem;
-  width: 5rem;
+  height: 3rem;
+  width: 6rem;
+  padding: 0.3rem;
   -webkit-box-shadow: 0px 10px 13px -7px #000000, 0px 0px 9px 0px rgba(252, 45, 11, 0);
   box-shadow: 0px 10px 13px -7px #000000, 0px 0px 9px 0px rgba(252, 45, 11, 0);
+}
+
+#buttonPicture {
+  width: 30%;
+  height: 80%;
 }
 
 #footer {

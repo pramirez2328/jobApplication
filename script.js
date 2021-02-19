@@ -11,8 +11,8 @@ let leader = document.querySelector( '#leader' );
 let outputLeader = document.querySelector( '#leader2' );
 
 let inputCrewMembers = document.querySelector( '#crewMembers' );
-let crew = document.querySelector( '#crew' );
-let outputLaborer = document.querySelectorAll( '.laborer' );
+let crew = document.querySelector( '#crewBox' );
+let outputLaborer = document.querySelectorAll( '#laborers' );
 
 console.log( inputCrewMembers );
 console.log( crew );
@@ -38,9 +38,10 @@ function handleLeaderName( e ) {
 
 function handleCrewMembers( e ) {
   crew.style.visibility = 'visible';
-  for ( let i = 0; i < outputLaborer.length; i++ ) {
-    outputLaborer[ i ].textContent = e.target.value;
-  }
+  let li = document.createElement( 'li' );
+  li.className += 'laborer';
+  li.innerHTML = `${e.target.value}   <span class="fas fa-trash-alt garbage"></span>`;
+  outputLaborer[ 0 ].appendChild( li );
 }
 
 day.onchange = handleDate;
