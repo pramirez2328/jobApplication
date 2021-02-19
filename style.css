@@ -160,7 +160,7 @@ hr {
   color: crimson;
 }
 
-#crewBox {
+#specific {
   display: flex;
   flex-direction: row;
 }
