@@ -14,8 +14,6 @@ let inputCrewMembers = document.querySelector( '#crewMembers' );
 let crew = document.querySelector( '#crewBox' );
 let outputLaborer = document.querySelector( '#laborers' );
 
-let garbage = document.getElementById( "laborers" );
-
 function handleDate( e ) {
   todayTitle[ 0 ].style.visibility = 'visible';
   todayTitle[ 1 ].style.visibility = "visible";
@@ -43,6 +41,7 @@ function handleCrewMembers( e ) {
 }
 
 function handleDelete( ) {
+
   let deleteCrew = document.querySelectorAll( '.garbage' );
 
   for ( let i = 0; i < deleteCrew.length; i++ ) {
@@ -53,11 +52,11 @@ function handleDelete( ) {
 
     };
   }
-  //g[ 0 ].parentElement.remove( e.target );
+
 }
 day.onchange = handleDate;
 inputJobName.onchange = handleJobName;
 inputCrewLeader.onchange = handleLeaderName;
 inputCrewMembers.onchange = handleCrewMembers;
 
-garbage.addEventListener( 'click', handleDelete );
+outputLaborer.addEventListener( 'click', handleDelete );
