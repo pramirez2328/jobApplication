@@ -14,6 +14,8 @@ let inputCrewMembers = document.querySelector( '#crewMembers' );
 let crew = document.querySelector( '#crewBox' );
 let outputLaborer = document.querySelector( '#laborers' );
 
+let button = document.getElementById( 'button' );
+
 function handleDate( e ) {
   todayTitle[ 0 ].style.visibility = 'visible';
   todayTitle[ 1 ].style.visibility = "visible";
@@ -54,9 +56,22 @@ function handleDelete( ) {
   }
 
 }
+
+function handleform( e ) {
+
+  let todayObject = {};
+
+  let today = document.getElementById( 'today2' ).innerText;
+
+  todayObject[ 'today' ] = today;
+  console.log( todayObject );
+}
+
+
 day.onchange = handleDate;
 inputJobName.onchange = handleJobName;
 inputCrewLeader.onchange = handleLeaderName;
 inputCrewMembers.onchange = handleCrewMembers;
 
 outputLaborer.addEventListener( 'click', handleDelete );
+button.addEventListener( 'click', handleform );
