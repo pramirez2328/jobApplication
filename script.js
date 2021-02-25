@@ -15,6 +15,7 @@ let crew = document.querySelector( '#crewBox' );
 let outputLaborer = document.querySelector( '#laborers' );
 
 let button = document.getElementById( 'button' );
+var todayObject = {};
 
 function handleDate( e ) {
   todayTitle[ 0 ].style.visibility = 'visible';
@@ -59,14 +60,24 @@ function handleDelete( ) {
 
 function handleform( e ) {
 
-  let todayObject = {};
-
   let today = document.getElementById( 'today2' ).innerText;
+  let jobName = document.getElementById( 'jobName2' ).innerText;
+  let leaderName = document.getElementById( 'leader2' ).innerText;
+  let crewName = document.querySelectorAll( 'li' );
+
 
   todayObject[ 'today' ] = today;
-  console.log( todayObject );
-}
+  todayObject[ 'jobName' ] = jobName;
+  todayObject[ 'leaderName' ] = leaderName;
 
+  let arrCrewMembers = [ ];
+  for ( let i = 0; i < crewName.length; i++ ) {
+    arrCrewMembers[ i ] = crewName[ i ].innerText;
+  }
+
+  todayObject[ 'crewMembers' ] = arrCrewMembers;
+
+}
 
 day.onchange = handleDate;
 inputJobName.onchange = handleJobName;
