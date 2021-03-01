@@ -190,10 +190,13 @@ ol li {
   margin: 0 2rem 1.5rem 0;
   height: 2.5rem;
   width: 5rem;
-  padding: 0.3rem;
   font-weight: bold;
   -webkit-box-shadow: 0px 10px 13px -7px #000000, 0px 0px 9px 0px rgba(252, 45, 11, 0);
   box-shadow: 0px 10px 13px -7px #000000, 0px 0px 9px 0px rgba(252, 45, 11, 0);
+}
+
+button:hover {
+  background-color: rgb(250, 195, 93);
 }
 
 #buttonPicture {
