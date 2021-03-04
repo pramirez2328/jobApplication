@@ -25,7 +25,7 @@ form {
 #container {
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: 0.5fr 2fr 0.1fr;
+  grid-template-rows: auto 2fr 0.1fr;
   grid-template-areas: "header" "form" "footer";
   grid-row-gap: 0.5rem;
   width: 100%;
@@ -145,12 +145,6 @@ span.red {
 .today {
   text-align: center;
   visibility: hidden;
-}
-
-hr {
-  height: 1.5px;
-  background-color: orange;
-  border: none
 }
 
 #today2 {
