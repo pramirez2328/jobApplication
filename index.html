@@ -23,80 +23,88 @@
 
     </header>
 
-    <section id="datePicker">
-      <div class="required">
-        <p>*required</p>
-      </div>
-      <div class="date">
-        <label for="start" class="dateLabel">Today's Date:</label>
-        <input type="date" id="start">
-      </div>
-    </section>
+    <form action="/index2.html">
 
-    <section id="sectionContent">
+      <div id="form">
+        <section id="datePicker">
+          <div class="required">
+            <p>*required</p>
+          </div>
+          <div class="date">
+            <label for="start" class="dateLabel">Today's Date:</label>
+            <input type="date" id="start" required>
+          </div>
+        </section>
 
-      <div class="inputs inputName">
-        <label for="inputJobName"><span class="red">*</span> Job Name:</label>
-        <select id="inputJobName">
-          <option value="0"> ... Enter Name</option>
-          <option value="Main">Main</option>
-          <option value="Smith">Smith</option>
-          <option value="yard">yard</option>
-          <option value="Pickup Material">pickUp material</option>
+        <section id="sectionContent">
+
+          <div class="inputs inputName">
+            <label for="inputJobName"><span class="red">*</span> Job Name:</label>
+            <select id="inputJobName" required>
+             <option value=""> ... Enter Name</option>
+             <option value="Main">Main</option>
+             <option value="Smith">Smith</option>
+             <option value="yard">yard</option>
+             <option value="Pickup Material">pickUp material</option>
+				     </select>
+          </div>
+
+          <div class="inputs inputCrewLeader">
+            <label for="crewLeader"><span class="red">*</span> Crew Leader:</label>
+            <select id="crewLeader" required>
+              <option value=""> ... Enter Name</option>
+              <option value="Pedro">Pedro</option>
+              <option value="Samuel">Samuel</option>
+              <option value="Ruben">Ruben</option>
+              <option value="Fatimo">Fatimo</option>
 				</select>
-      </div>
+          </div>
 
-      <div class="inputs inputCrewLeader">
-        <label for="crewLeader"><span class="red">*</span> Crew Leader:</label>
-        <select id="crewLeader">
-          <option value="0"> ... Enter Name</option>
-          <option value="Pedro">Pedro</option>
-          <option value="Samuel">Samuel</option>
-          <option value="Ruben">Ruben</option>
-          <option value="Fatimo">Fatimo</option>
-				</select>
-      </div>
-
-      <div class="inputCrewMember">
-        <label for="crewMembers"><span>*</span> Crew Members:</label>
-        <select id="crewMembers">
+          <div id="inputCrewMember">
+            <label for="crewMembers"><span>*</span> Crew Members:</label>
+            <select id="crewMembers">
           <option value="0"> ... Enter Name</option>
           <option value="Chaparro">Chaparro</option>
           <option value="Santi">Santi</option>
           <option value="Lupe">Lupe</option>
           <option value="David">David</option>
 				</select>
-      </div>
-
-    </section>
-
-
-    <section id="output">
-      <div id="outputInformation">
-        <h1 class="today">Today is: <span id="today2"></span></h1>
-        <hr class="today">
-        <p id="jobName">Job Name: <span id="jobName2"> </span></p>
-        <p id="leader">Crew Leader: <span id="leader2"> </span></p>
-
-        <div id="crewBox">
-          <div id="specific">
-            <p id="crew">Crew Members: </p>
-            <ol id="laborers">
-
-            </ol>
-
           </div>
 
-        </div>
+        </section>
+
+
+        <section id="output">
+          <div id="outputInformation">
+            <h1 class="today">Today is: <span id="today2"></span></h1>
+            <hr class="today">
+            <p id="jobName">Job Name: <span id="jobName2"> </span></p>
+            <p id="leader">Crew Leader: <span id="leader2"> </span></p>
+
+            <div id="crewBox">
+              <div id="specific">
+                <p id="crew">Crew Members: </p>
+                <ol id="laborers">
+
+                </ol>
+
+              </div>
+
+            </div>
+
+          </div>
+          <input type="submit" id="button" value="NEXT">
+        </section>
+
 
       </div>
-      <a href="./index2.html" id="button"> <button>NEXT <span><img src="./images/arrow.png" alt="arrow picture" id="buttonPicture" ></span></button> </a>
 
-    </section>
+
+    </form>
+
 
     <footer id="footer">
-      <h6>&copyProudly created by <span class="myName">Pedro Ramirez
- </span>
+      <h6>&copyProudly created by <span class="myName">Pedro Ramirez</span>
       </h6>
     </footer>
   </div>
