@@ -1,6 +1,13 @@
+#header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+
 #form {
-  border: solid 2px aqua;
-  margin: 0.5rem 1rem 0 1rem;
+  border: solid 2px rgb(255, 166, 0);
+  margin: 1rem;
   padding: 1rem;
   display: flex;
   flex-direction: column;
@@ -20,16 +27,42 @@ h1#titleMaterial {
 
 .material {
   border: solid 1px orange;
-  width: 5rem;
+  width: 7rem;
   margin-top: 0.5rem;
+  height: 1.3rem;
 }
 
 .materialBox {
   border: 2px solid orange;
+  margin: 0.3rem;
   padding: 1rem;
   border-radius: 7px;
   width: 70%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 0px 0px 16px 18px rgba(76, 74, 73, 0.19);
+  box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 0px 0px 16px 18px rgba(76, 74, 73, 0.19);
+}
+
+#sign {
+  color: red;
+  font-size: 1.3rem;
+}
+
+p {
+  font-style: italic;
+}
+
+#button2 {
+  width: 78%;
+  background-color: aqua;
+  padding: 0.5rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+#button2:hover {
+  background-color: orange;
 }
