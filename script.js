@@ -58,7 +58,7 @@ function handleDelete( ) {
 
 }
 
-function handleform( e ) {
+function handleform( ) {
 
   let today = document.getElementById( 'today2' ).innerText;
   let jobName = document.getElementById( 'jobName2' ).innerText;
@@ -76,6 +76,7 @@ function handleform( e ) {
   }
 
   todayObject[ 'crewMembers' ] = arrCrewMembers;
+  sessionStorage.setItem( 'object1', JSON.stringify( todayObject ) );
 
 }
 
