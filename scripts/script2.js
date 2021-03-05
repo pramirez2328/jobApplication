@@ -1,9 +1,9 @@
-let todayObject2 = JSON.parse( sessionStorage.getItem( 'object1' ) );
+const todayObject2 = {};
 const button2 = document.querySelector( "#button2" );
 const material = document.querySelectorAll( '.material' );
 
 
-function handle2Input( e ) {
+function handle2Input( ) {
 
   for ( let i = 0; i < material.length; i++ ) {
     if ( material[ i ].value != 0 ) {
